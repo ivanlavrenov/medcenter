@@ -1,0 +1,8 @@
+﻿*, ::after, ::before {
+    box-sizing: border-box;
+    font-family: montserrat,Arial,serif;
+}
+
+li{
+    margin-bottom: 12px;
+}
