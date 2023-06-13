@@ -37,7 +37,6 @@ namespace web
             public string date { get; set; }
             public string doctor { get; set; }
             public string service { get; set; }
-
             public int id { get; set; }
 
         }
@@ -61,9 +60,8 @@ namespace web
         {
             if (modalDate.Text.Length > 0 && modalName.Text.Length > 0 && modalPhone.Text.Length > 0 && modalDoctor.Text.Length > 0 && modalService.Text.Length > 0) {
                 string path = AppDomain.CurrentDomain.BaseDirectory + @"..\..\data\appointments.json";
-
                 string text = File.ReadAllText(path);
-                var person = JsonSerializer.Deserialize<Appointments>(text);
+                var person = JsonSerializer.Deserialize<Appointments>(text); 
 
                 var appointment = new Appointment
                 {
